@@ -7,6 +7,44 @@
 //
 
 import UIKit
+import RxFlow
+import RxSwift
+import RxCocoa
+import XCGLogger
+
+let log: XCGLogger = {
+    #if DEBUG
+    let xcLog = XCGLogger(identifier: "advancedLoggerDebug", includeDefaultDestinations: false)
+    let systemDestination = AppleSystemLogDestination(identifier: XCGLogger.Constants.systemLogDestinationIdentifier)
+
+    systemDestination.outputLevel = .debug
+    systemDestination.showLogIdentifier = false
+    systemDestination.showFunctionName = true
+    systemDestination.showThreadName = true
+    systemDestination.showLevel = true
+    systemDestination.showFileName = true
+    systemDestination.showLineNumber = true
+
+    xcLog.add(destination: systemDestination)
+    xcLog.logAppDetails()
+    #else
+    let xcLog = XCGLogger(identifier: "advancedLoggerRelease", includeDefaultDestinations: false)
+    let systemDestination = AppleSystemLogDestination(identifier: XCGLogger.Constants.systemLogDestinationIdentifier)
+
+    systemDestination.outputLevel = .severe
+    systemDestination.showLogIdentifier = true
+    systemDestination.showFunctionName = true
+    systemDestination.showThreadName = true
+    systemDestination.showLevel = true
+    systemDestination.showFileName = true
+    systemDestination.showLineNumber = true
+
+    xcLog.add(destination: systemDestination)
+    xcLog.logAppDetails()
+    #endif
+
+    return xcLog
+}()
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
