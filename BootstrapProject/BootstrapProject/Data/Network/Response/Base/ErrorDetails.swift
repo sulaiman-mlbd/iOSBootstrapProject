@@ -12,7 +12,7 @@ struct ErrorDetails: Codable {
     let status: String?
     let code: Int?
     let message: String
-    
+
     init(status: String? = nil, code: Int? = nil, displayText: String) {
         self.status = status
         self.code = code

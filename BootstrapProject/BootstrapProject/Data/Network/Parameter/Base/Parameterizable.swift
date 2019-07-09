@@ -9,6 +9,6 @@
 import Foundation
 
 protocol Parameterizable {
-    
+
     func param() -> [String: Any]
 }
