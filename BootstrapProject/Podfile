@@ -12,6 +12,10 @@ def shared_pods
   pod 'Alamofire', '4.7.3'
   pod 'XCGLogger', '7.0.0'
   pod 'SwiftGen', '~> 6.0'
+  pod 'lottie-ios'
+  pod 'KeychainAccess', '3.1.1'
+  pod 'SnapKit', '4.2.0'
+  
 end
 
 target 'dev' do

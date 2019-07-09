@@ -51,8 +51,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    let disposeBag = DisposeBag()
+    var coordinator = FlowCoordinator()
+    var appFlow: AppFlow!
+
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+
+        guard let window = window else { return false }
+
+        window.backgroundColor = .white
+        coordinator.rx.didNavigate.subscribe(onNext: { [weak self] (flow, step) in
+            print("did nacigate to flow = \(flow) and step = \(step)")
+        }).disposed(by: disposeBag)
+
+        self.appFlow = AppFlow(with: window)
+
+        coordinator.coordinate(flow: self.appFlow, with: OneStepper(withSingleStep: AppStep.splash))
+
         return true
     }
 
