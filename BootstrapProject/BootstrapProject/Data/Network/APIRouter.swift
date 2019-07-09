@@ -55,7 +55,7 @@ enum APIRouter: URLRequestConvertible {
     // MARK: URLRequestConvertible
     func asURLRequest() throws -> URLRequest {
         //  let url = try ApiPath.baseURLString.asURL()
-        var urlParameters = URLComponents(string: "ApiPath.baseURLString")
+        var urlParameters = URLComponents(string: ApiPath.baseURLString)
         urlParameters?.path = path
         urlParameters?.queryItems = queryItems
 
@@ -67,20 +67,9 @@ enum APIRouter: URLRequestConvertible {
 
         // Common Headers
         //urlRequest.setValue(ContentType.json.rawValue, forHTTPHeaderField: HTTPHeaderField.acceptType.rawValue)
-        ///urlRequest.setValue(ContentType.json.rawValue, forHTTPHeaderField: HTTPHeaderField.contentType.rawValue)
+        urlRequest.setValue(ContentType.json.rawValue, forHTTPHeaderField: HTTPHeaderField.contentType.rawValue)
 
-        //        if let language = PersistenceManager.shared.getPrefferedLanguage() {
-        //            urlRequest.setValue(language, forHTTPHeaderField: HTTPHeaderField.acceptLanguage.rawValue)
-        //        }
-
-        //        switch self {
-        //        case .getTimeline(let modifyHeaderDate, _, _):
-        //            if let value = modifyHeaderDate {
-        //                urlRequest.setValue(value, forHTTPHeaderField: HTTPHeaderField.ifModifiedSince.rawValue)
-        //            }
-        //        default:
-        //            break
-        //        }
+        // MARK: - Addy HTTPHeaderFields here if needed
 
         // Parameters
         if let parameters = parameters {
