@@ -30,7 +30,7 @@ enum Constants {
     }
 
     enum AppNotification {
-        static let signOutNotification = "genelife_sign_out_notification"
+        static let signOutNotification = "sign_out_notification"
     }
 
     enum Path {

@@ -9,6 +9,6 @@
 import Foundation
 
 class ApiPath {
-    static let baseURLString = "https://genelife-app-api-dev.genelife.jp"
-    static let version = "/api/v1"
+    static let baseURLString = ""
+    static let version = ""
 }
