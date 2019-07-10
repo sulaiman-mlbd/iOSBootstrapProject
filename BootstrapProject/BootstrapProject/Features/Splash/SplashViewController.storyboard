@@ -19,22 +19,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="Q1m-zd-nDY">
-                                <rect key="frame" x="-62.5" y="0.0" width="500" height="500"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="6wi-fj-9zT">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bootstrap Project - Splash" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J71-zY-SXe">
+                                <rect key="frame" x="10" y="315.5" width="355" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" name="White"/>
                         <constraints>
-                            <constraint firstItem="Q1m-zd-nDY" firstAttribute="centerY" secondItem="Rv8-4r-BYj" secondAttribute="centerY" multiplier="0.75" id="11r-AB-jrr"/>
-                            <constraint firstItem="Q1m-zd-nDY" firstAttribute="height" secondItem="Rv8-4r-BYj" secondAttribute="height" priority="250" id="F6v-ep-fcn"/>
-                            <constraint firstItem="Q1m-zd-nDY" firstAttribute="centerX" secondItem="Rv8-4r-BYj" secondAttribute="centerX" id="Ixk-di-37N"/>
-                            <constraint firstItem="Q1m-zd-nDY" firstAttribute="width" secondItem="Rv8-4r-BYj" secondAttribute="width" priority="250" id="mnZ-ov-C7G"/>
+                            <constraint firstItem="sZv-5w-NEK" firstAttribute="trailing" secondItem="J71-zY-SXe" secondAttribute="trailing" constant="10" id="DnA-bN-pfo"/>
+                            <constraint firstItem="J71-zY-SXe" firstAttribute="centerY" secondItem="Rv8-4r-BYj" secondAttribute="centerY" id="Fka-xS-9wX"/>
+                            <constraint firstItem="6wi-fj-9zT" firstAttribute="leading" secondItem="sZv-5w-NEK" secondAttribute="leading" id="QqM-R9-0px"/>
+                            <constraint firstItem="sZv-5w-NEK" firstAttribute="trailing" secondItem="6wi-fj-9zT" secondAttribute="trailing" id="Z7b-TJ-gEH"/>
+                            <constraint firstItem="J71-zY-SXe" firstAttribute="centerX" secondItem="Rv8-4r-BYj" secondAttribute="centerX" id="ft2-SC-qWv"/>
+                            <constraint firstItem="6wi-fj-9zT" firstAttribute="top" secondItem="sZv-5w-NEK" secondAttribute="top" id="nZc-5p-PlQ"/>
+                            <constraint firstItem="J71-zY-SXe" firstAttribute="leading" secondItem="sZv-5w-NEK" secondAttribute="leading" constant="10" id="ntc-gm-8sL"/>
+                            <constraint firstItem="sZv-5w-NEK" firstAttribute="bottom" secondItem="6wi-fj-9zT" secondAttribute="bottom" id="pfU-Mq-Jeg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sZv-5w-NEK"/>
                     </view>
-                    <connections>
-                        <outlet property="morphImageView" destination="Q1m-zd-nDY" id="HZp-J4-B6V"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="glB-a6-4ho" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
