@@ -62,7 +62,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         window.backgroundColor = .white
         coordinator.rx.didNavigate.subscribe(onNext: { [weak self] (flow, step) in
-            print("did nacigate to flow = \(flow) and step = \(step)")
+            print("did navigate to flow = \(flow) and step = \(step)")
         }).disposed(by: disposeBag)
 
         self.appFlow = AppFlow(with: window)
