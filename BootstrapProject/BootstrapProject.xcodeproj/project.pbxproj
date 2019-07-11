@@ -18,7 +18,6 @@
 		59047AD022D4654900036879 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59776D6322D34201000F4F19 /* Result.swift */; };
 		59047AD122D4654900036879 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59776D4822D31A44000F4F19 /* Assets.swift */; };
 		59047AD322D4654900036879 /* Pods_dev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69D70A1C4ECD68C8BF0C571A /* Pods_dev.framework */; };
-		59047AD522D4654900036879 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 59047A8122D463FD00036879 /* Settings.bundle */; };
 		59047AD622D4654900036879 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59F75DEB22CF584700C6D15C /* LaunchScreen.storyboard */; };
 		59047AD722D4654900036879 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59F75DE922CF584700C6D15C /* Assets.xcassets */; };
 		59047AE622D4658400036879 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59776D5D22D34163000F4F19 /* ErrorResponse.swift */; };
@@ -31,7 +30,6 @@
 		59047AEE22D4658400036879 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59776D6322D34201000F4F19 /* Result.swift */; };
 		59047AEF22D4658400036879 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59776D4822D31A44000F4F19 /* Assets.swift */; };
 		59047AF122D4658400036879 /* Pods_dev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69D70A1C4ECD68C8BF0C571A /* Pods_dev.framework */; };
-		59047AF322D4658400036879 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 59047A8122D463FD00036879 /* Settings.bundle */; };
 		59047AF422D4658400036879 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59F75DEB22CF584700C6D15C /* LaunchScreen.storyboard */; };
 		59047AF522D4658400036879 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59F75DE922CF584700C6D15C /* Assets.xcassets */; };
 		59047B0522D466CE00036879 /* ApiPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59047B0422D466CE00036879 /* ApiPath.swift */; };
@@ -111,6 +109,8 @@
 		59E9AC0E22D5D4A6002A4A96 /* dev-info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 59F75DEE22CF584700C6D15C /* dev-info.plist */; };
 		59E9AC1222D5D707002A4A96 /* prod-info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 59E9AC1122D5D706002A4A96 /* prod-info.plist */; };
 		59E9AC1422D5D716002A4A96 /* stg-info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 59E9AC1322D5D716002A4A96 /* stg-info.plist */; };
+		59E9AC1522D703DB002A4A96 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 59047AC122D4647D00036879 /* Settings.bundle */; };
+		59E9AC1622D703E0002A4A96 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 59047AC322D4648900036879 /* Settings.bundle */; };
 		59F75DE322CF584600C6D15C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F75DE222CF584600C6D15C /* AppDelegate.swift */; };
 		59F75DEA22CF584700C6D15C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59F75DE922CF584700C6D15C /* Assets.xcassets */; };
 		59F75DED22CF584700C6D15C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59F75DEB22CF584700C6D15C /* LaunchScreen.storyboard */; };
@@ -494,19 +494,19 @@
 		59F75DE122CF584600C6D15C /* BootstrapProject */ = {
 			isa = PBXGroup;
 			children = (
-				59047B0322D466B400036879 /* Stg */,
-				59047B0222D466AD00036879 /* Prod */,
-				59047B0122D466A600036879 /* Dev */,
 				59F75DE222CF584600C6D15C /* AppDelegate.swift */,
 				59776D4C22D33533000F4F19 /* Common */,
 				59776D4D22D33540000F4F19 /* Data */,
+				59047B0122D466A600036879 /* Dev */,
 				59776D5022D33E39000F4F19 /* Features */,
 				59776D5222D33E9B000F4F19 /* Flows */,
 				59776D5322D33EA6000F4F19 /* Libs */,
 				59776D5422D33EB7000F4F19 /* Models */,
+				59047B0222D466AD00036879 /* Prod */,
 				59776D5522D33EC5000F4F19 /* Protocols */,
 				59776D4522D316DA000F4F19 /* Resources */,
 				59776D5622D33ED2000F4F19 /* Services */,
+				59047B0322D466B400036879 /* Stg */,
 				59776D5722D33ED7000F4F19 /* Utility */,
 			);
 			path = BootstrapProject;
@@ -624,12 +624,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59047AD522D4654900036879 /* Settings.bundle in Resources */,
 				59047AD622D4654900036879 /* LaunchScreen.storyboard in Resources */,
 				59047B6222D4B71B00036879 /* HomeViewController.storyboard in Resources */,
 				59047AD722D4654900036879 /* Assets.xcassets in Resources */,
 				59047B3322D46BF400036879 /* SplashViewController.storyboard in Resources */,
 				59E9AC1422D5D716002A4A96 /* stg-info.plist in Resources */,
+				59E9AC1522D703DB002A4A96 /* Settings.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -637,12 +637,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59047AF322D4658400036879 /* Settings.bundle in Resources */,
 				59E9AC1222D5D707002A4A96 /* prod-info.plist in Resources */,
 				59047AF422D4658400036879 /* LaunchScreen.storyboard in Resources */,
 				59047B6322D4B71B00036879 /* HomeViewController.storyboard in Resources */,
 				59047AF522D4658400036879 /* Assets.xcassets in Resources */,
 				59047B3422D46BF400036879 /* SplashViewController.storyboard in Resources */,
+				59E9AC1622D703E0002A4A96 /* Settings.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
