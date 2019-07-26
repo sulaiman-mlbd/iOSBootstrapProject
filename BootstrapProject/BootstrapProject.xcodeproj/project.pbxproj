@@ -17,7 +17,6 @@
 		59047ACF22D4654900036879 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59776D5F22D341A4000F4F19 /* Response.swift */; };
 		59047AD022D4654900036879 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59776D6322D34201000F4F19 /* Result.swift */; };
 		59047AD122D4654900036879 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59776D4822D31A44000F4F19 /* Assets.swift */; };
-		59047AD322D4654900036879 /* Pods_dev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69D70A1C4ECD68C8BF0C571A /* Pods_dev.framework */; };
 		59047AD622D4654900036879 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59F75DEB22CF584700C6D15C /* LaunchScreen.storyboard */; };
 		59047AD722D4654900036879 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59F75DE922CF584700C6D15C /* Assets.xcassets */; };
 		59047AE622D4658400036879 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59776D5D22D34163000F4F19 /* ErrorResponse.swift */; };
@@ -29,7 +28,6 @@
 		59047AED22D4658400036879 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59776D5F22D341A4000F4F19 /* Response.swift */; };
 		59047AEE22D4658400036879 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59776D6322D34201000F4F19 /* Result.swift */; };
 		59047AEF22D4658400036879 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59776D4822D31A44000F4F19 /* Assets.swift */; };
-		59047AF122D4658400036879 /* Pods_dev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69D70A1C4ECD68C8BF0C571A /* Pods_dev.framework */; };
 		59047AF422D4658400036879 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59F75DEB22CF584700C6D15C /* LaunchScreen.storyboard */; };
 		59047AF522D4658400036879 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59F75DE922CF584700C6D15C /* Assets.xcassets */; };
 		59047B0522D466CE00036879 /* ApiPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59047B0422D466CE00036879 /* ApiPath.swift */; };
@@ -167,7 +165,6 @@
 		59F75DEC22CF584700C6D15C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		59F75DEE22CF584700C6D15C /* dev-info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "dev-info.plist"; sourceTree = "<group>"; };
 		622D4A664169B2DB44E5D412 /* Pods-stg.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stg.debug.xcconfig"; path = "Pods/Target Support Files/Pods-stg/Pods-stg.debug.xcconfig"; sourceTree = "<group>"; };
-		69D70A1C4ECD68C8BF0C571A /* Pods_dev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A306257F43A38B06F6CC1157 /* Pods-prod.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-prod.debug.xcconfig"; path = "Pods/Target Support Files/Pods-prod/Pods-prod.debug.xcconfig"; sourceTree = "<group>"; };
 		CAC8184A9021F9B2AE02038A /* Pods-stg.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stg.release.xcconfig"; path = "Pods/Target Support Files/Pods-stg/Pods-stg.release.xcconfig"; sourceTree = "<group>"; };
 		EB83031E462CE9FA81FB01B5 /* Pods_stg.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_stg.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -180,7 +177,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59047AD322D4654900036879 /* Pods_dev.framework in Frameworks */,
 				7E8CE853590A0582A28913C6 /* Pods_stg.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -189,7 +185,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59047AF122D4658400036879 /* Pods_dev.framework in Frameworks */,
 				97C9028363B8C2B257732CAC /* Pods_prod.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,7 +216,6 @@
 		4F13E4026662D9908B058616 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				69D70A1C4ECD68C8BF0C571A /* Pods_dev.framework */,
 				EC3370D641EB2C5A84080FA3 /* Pods_prod.framework */,
 				EB83031E462CE9FA81FB01B5 /* Pods_stg.framework */,
 			);
@@ -708,40 +702,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-stg/Pods-stg-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
-				"${BUILT_PRODUCTS_DIR}/ObjcExceptionBridging/ObjcExceptionBridging.framework",
-				"${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxFlow/RxFlow.framework",
-				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
-				"${BUILT_PRODUCTS_DIR}/XCGLogger/XCGLogger.framework",
-				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-stg/Pods-stg-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjcExceptionBridging.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reusable.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxFlow.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XCGLogger.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-stg/Pods-stg-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-stg/Pods-stg-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-stg/Pods-stg-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		59047ADA22D4654900036879 /* Swiftlint Autocorrect */ = {
@@ -844,40 +813,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-prod/Pods-prod-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
-				"${BUILT_PRODUCTS_DIR}/ObjcExceptionBridging/ObjcExceptionBridging.framework",
-				"${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxFlow/RxFlow.framework",
-				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
-				"${BUILT_PRODUCTS_DIR}/XCGLogger/XCGLogger.framework",
-				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-prod/Pods-prod-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjcExceptionBridging.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reusable.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxFlow.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XCGLogger.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-prod/Pods-prod-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-prod/Pods-prod-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-prod/Pods-prod-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		59047AF822D4658400036879 /* Swiftlint Autocorrect */ = {
@@ -1012,40 +956,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-dev/Pods-dev-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
-				"${BUILT_PRODUCTS_DIR}/ObjcExceptionBridging/ObjcExceptionBridging.framework",
-				"${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxFlow/RxFlow.framework",
-				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
-				"${BUILT_PRODUCTS_DIR}/XCGLogger/XCGLogger.framework",
-				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-dev/Pods-dev-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjcExceptionBridging.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reusable.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxFlow.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XCGLogger.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-dev/Pods-dev-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-dev/Pods-dev-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-dev/Pods-dev-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9C823F455AB0BB63E3EF445E /* [CP] Check Pods Manifest.lock */ = {
@@ -1201,6 +1120,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/BootstrapProject/Resources/Stg/stg-info.plist";
@@ -1222,6 +1142,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/BootstrapProject/Resources/Stg/stg-info.plist";
@@ -1401,8 +1322,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = XYSCZDXKR7;
 				INFOPLIST_FILE = "$(SRCROOT)/BootstrapProject/Resources/Dev/dev-info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1410,7 +1332,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sulaiman.BootstrapProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = Wildcard;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1422,8 +1344,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = XYSCZDXKR7;
 				INFOPLIST_FILE = "$(SRCROOT)/BootstrapProject/Resources/Dev/dev-info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1431,7 +1354,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sulaiman.BootstrapProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = Wildcard;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
