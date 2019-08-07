@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -113,11 +113,13 @@
 		59F75DEA22CF584700C6D15C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59F75DE922CF584700C6D15C /* Assets.xcassets */; };
 		59F75DED22CF584700C6D15C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59F75DEB22CF584700C6D15C /* LaunchScreen.storyboard */; };
 		7E8CE853590A0582A28913C6 /* Pods_stg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB83031E462CE9FA81FB01B5 /* Pods_stg.framework */; };
+		8BC538442CAED5FE805407D6 /* Pods_dev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 251D8DAD9D35981C2D921F28 /* Pods_dev.framework */; };
 		97C9028363B8C2B257732CAC /* Pods_prod.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC3370D641EB2C5A84080FA3 /* Pods_prod.framework */; };
-		D34903A34A21C9654004A847 /* Pods_dev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69D70A1C4ECD68C8BF0C571A /* Pods_dev.framework */; };
+		D34903A34A21C9654004A847 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		251D8DAD9D35981C2D921F28 /* Pods_dev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CFCFF9F30AC6AA734F3EAAC /* Pods-dev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dev.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dev/Pods-dev.debug.xcconfig"; sourceTree = "<group>"; };
 		59047A8122D463FD00036879 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		59047AC122D4647D00036879 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
@@ -193,7 +195,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D34903A34A21C9654004A847 /* Pods_dev.framework in Frameworks */,
+				D34903A34A21C9654004A847 /* (null) in Frameworks */,
+				8BC538442CAED5FE805407D6 /* Pods_dev.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +221,7 @@
 			children = (
 				EC3370D641EB2C5A84080FA3 /* Pods_prod.framework */,
 				EB83031E462CE9FA81FB01B5 /* Pods_stg.framework */,
+				251D8DAD9D35981C2D921F28 /* Pods_dev.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -522,6 +526,7 @@
 				59047ADB22D4654900036879 /* Swiftlint */,
 				59047ADC22D4654900036879 /* Swiftgen Run Script */,
 				59047ADD22D4654900036879 /* Acknowledgement Run Script */,
+				B2582F40DF0836F34F27FA58 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -545,6 +550,7 @@
 				59047AF922D4658400036879 /* Swiftlint */,
 				59047AFA22D4658400036879 /* Swiftgen Run Script */,
 				59047AFB22D4658400036879 /* Acknowledgement Run Script */,
+				16C48FA998FE789366F56A74 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -568,6 +574,7 @@
 				59776D4222D30FEB000F4F19 /* Swiftlint */,
 				59776D4322D3107D000F4F19 /* Swiftgen Run Script */,
 				59047A7F22D4634600036879 /* Acknowledgement Run Script */,
+				822D8184EC9B617C1FAC09E0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -656,6 +663,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		16C48FA998FE789366F56A74 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-prod/Pods-prod-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-prod/Pods-prod-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-prod/Pods-prod-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		59047A7F22D4634600036879 /* Acknowledgement Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -950,6 +974,23 @@
 			shellPath = /bin/sh;
 			shellScript = "$PODS_ROOT/SwiftGen/bin/swiftgen\n\n";
 		};
+		822D8184EC9B617C1FAC09E0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-dev/Pods-dev-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-dev/Pods-dev-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-dev/Pods-dev-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		922784AE5B3FB6F4960E2543 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -987,6 +1028,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2582F40DF0836F34F27FA58 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-stg/Pods-stg-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-stg/Pods-stg-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-stg/Pods-stg-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

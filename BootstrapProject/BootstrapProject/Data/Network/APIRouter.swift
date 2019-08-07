@@ -13,6 +13,7 @@ enum APIRouter: URLRequestConvertible {
 
     // MARK: Api names
     case getProductList
+    case login
 
     // MARK: Method get/post/..
 
@@ -20,6 +21,8 @@ enum APIRouter: URLRequestConvertible {
         switch self {
         case .getProductList:
             return .get
+        case .login:
+            return .post
         }
     }
 
@@ -29,6 +32,8 @@ enum APIRouter: URLRequestConvertible {
         switch self {
         case .getProductList:
             return "/hdsfj/getproductlist"
+        case .login:
+            return "/api/login"
         }
     }
 
